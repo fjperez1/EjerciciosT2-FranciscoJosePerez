@@ -35,7 +35,7 @@ public class Ejercicio03 {
 		System.out.println("Introduce la cantidad de comida comprada en kg"); //Solicitamos al usuario que nos indique la cantidad de comida comprada en kg
 		comidaComprada = lectura.nextDouble(); //Guardamos el valor introducido en la variable "comidaComprada"
 		
-		System.out.println("Introduce los kg de comida que consumen todos los animales"); //Solicitamos al usuario que nos indique la cantidad de comida que consumen todos los animales
+		System.out.println("Introduce los kg de comida que consumen todos los animales en kg"); //Solicitamos al usuario que nos indique la cantidad de comida que consumen todos los animales
 		consumo = lectura.nextDouble(); //Guardamos el valor introducido en la variable "consumo"
 		
 		//Realizamos las operaciones necesarias
@@ -67,7 +67,8 @@ public class Ejercicio03 {
 			System.out.println("Error, el número de animales debe ser superior a 0"); //Mostramos un mensaje de error en caso de que sea igual a 0
 		
 		
-
+		//Cerramos el scanner
+		lectura.close();
 	}
 
 }

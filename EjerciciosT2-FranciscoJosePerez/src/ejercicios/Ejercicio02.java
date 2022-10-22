@@ -7,24 +7,38 @@ public class Ejercicio02 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		/* Pruebas
+		 * 
+		 * pruebo el programa con mi propio DNI, debe dar como resultado una "W":
+		 * 
+		 * 		Input: 79285993
+		 * 		resultado: W (satisfactorio)
+		 * 
+		 * ahora procedo a probar el programa con otro dni aleatorio generado en internet
+		 * 
+		 * 		Input: 17962800
+		 * 		resultado: F (satisfactorio)
+		 * 
+		 */
+		
 		//Declaramos las variables que vamos a utilizar
 		
-		int dni;
-		String letra ="";
+		int dni; //En esta variable vamos a guardar el número de DNI introducido por el usuario
+		String letra =""; //En esta variable vamos a guardar la letra correspondiente al número de DNI introducido por el usuario
 		Scanner lectura = new Scanner (System.in);
 		
 		//Solicitamos al usuario que introduzca su número de DNI
 		
 		System.out.println("Introduce tu número de DNI");
-		dni = lectura.nextInt();
+		dni = lectura.nextInt(); //Guardamos el valor introducido en la variable "dni"
 		
 		//Calculamos el módulo 23 del DNI 
 		
-		dni%=23;
+		dni%=23; //Este valor lo vamos a utilizar luego para encontrar la letra correspondiente a ese número de DNI
 		
 		//Realizamos los cálculos necesarios
 		
-		switch (dni) {
+		switch (dni) { //En este switch contemplamos los 23 posibles casos, en función del resultado de dni%23 (es decir, en función de qué valor nos de el resto de la división del número de DNI introducido entre 23)
 		
 		case 0:
 		
@@ -140,10 +154,15 @@ public class Ejercicio02 {
 			
 			letra="E";
 			break;
+			
 		
 		}
 		
-		System.out.println(letra);
+		System.out.println(letra); //Mostramos por pantalla la letra al usuario
+		
+		//Cerramos el scanner
+		
+		lectura.close();
 		
 	}
 
