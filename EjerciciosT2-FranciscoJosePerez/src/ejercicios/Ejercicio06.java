@@ -8,7 +8,7 @@ public class Ejercicio06 {
 		
 		//Declaramos las variables que vamos a utilizar
 		
-		int num1 = (int)(Math.random()*99)+1, num2 = (int)(Math.random()*99)+1, res;
+		int num1 = (int)(Math.random()*99)+1, num2 = (int)(Math.random()*99)+1, res; //Usamos la función Matn.random para generar un número aleatorio, con el prefijo (int) cogemos únicamente la parte entera
 		/*
 		 * num1: en esta variable vamos a guardar el primer número aleatorio generado
 		 * num2: en esta variale vamos a guardar el segundo número aleatorio generado
