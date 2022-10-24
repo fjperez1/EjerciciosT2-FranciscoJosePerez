@@ -9,9 +9,9 @@ public class Ejercicio03 {
 		
 		/*Pruebas realizadas:
 		 * 
-		 * animales = 0 (error)
-		 * comidaComprada = 0 (error)
-		 * consumo = 0 (error)
+		 * animales = 0, comidaComprada = 200, consumo= 200 --> mensaje de error
+		 * comidaComprada = 0, animales = 10, consumo = 200 --> mensaje de error
+		 * consumo = 0 (error), animales = 10, comidaComprada = 200 --> mensaje de error
 		 * 
 		 * comidaComprada= 200, consumo=200, animales = 10 (resultado exitoso, muestra la línea 50, cada animal tendrá una ración de 20kg)
 		 * comidaComprada=200, consumo=250 (comida insuficiente, muestra la línea 55, cada animal tendrá una ración de 20 kg)
